@@ -140,7 +140,7 @@ if __name__ == "__main__":
     to_key = input_to_key(word_crypt, key_crypt)
 
     if type(to_key) == tuple:
-        int_input, int_key = input_to_key(word_crypt, key_crypt)
+        int_input, int_key = to_key
     else:
         quit("Unexpected error in line (63 or 143)")
 
