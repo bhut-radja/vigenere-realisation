@@ -20,6 +20,7 @@ def get_alphabet():
 
     with open(ALPHABET, "r") as f:
         alphabet = f.read()
+        alphabet = alphabet.lower()
 
     return list(alphabet)
 
@@ -40,6 +41,7 @@ def format_input(file):
 
     with open(file, "r") as f:
         message = f.read()
+        message = message.lower()
 
     message_list = list(message)
 
